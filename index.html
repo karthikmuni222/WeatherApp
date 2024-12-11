@@ -1,102 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="enter city name"
-            spellcheck="false">
-            <button><img src="search.png"></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">A M K</div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
         </div>
-        <div class="error">
-            <p>Invalid city name</p>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="home-container">
+        <div class="profile-image">
+          <img src="ID_CARD_PIC-removebg-preview.png" alt="Profile Picture" class="profile-pic"/>
         </div>
-        <div class="weather">
-            <img src="rain.png" class="weather-icon">
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">Banglore</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="humidity.png">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="wind.png">
-                    <div>
-                        <p class="wind">15 km/h</p>
-                        <p>Wind Speed</p>
-                    </div>
-                </div>
+        <div class="profile-content">
+          <h1>Hi, I'm Alam Muni Karthik</h1>
+          <p>Full stack developer</p>
+          <p class="email">karthikmuni2624@gmail.com</p>
+          <div class="social-icons">
+            <a href="https://github.com/karthikmuni222" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/munikarthik-alam/" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.hackerrank.com/profile/munikarthik222" target="_blank" class="social-btn" >
+              <i class="fab fa-hackerrank"></i>
+              <span>HackerRank</span>
+            </a>
+          </div>
+          <a href="https://drive.google.com/file/d/1lw5_EkXO7RbmyFtMmIUwaj3EYgu292g-/view?usp=drive_link"
+           target="_blank" class="resume-btn">
+            <i class="fas fa-file-alt"></i>
+
+            <span>View Resume</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an aspiring software developer with strong knowledge in
+        <strong>JAVA, SQL,HTML,CSS,JS</strong>. I have completed my Bachelor's
+        of Technology in Artificial Intelligence and Data Science.I have a
+        strong interest in software development and I love solving complex
+        problems and creating efficient solutions through code.I am a passionate
+        gamer and a passionate to build games.
+      </p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="TictactoeGamePic.png" alt="Tic Tac Toe Game" />
+          </div>
+          <div class="project-info">
+            <h3>TIC TAC TOE GAME</h3>
+            <p>
+              Tic tac toe game is a simple game that is played between two
+              players on a 3x3 grid. I have built this game using
+              <strong>Java</strong> with Object-Oriented Programming principles.
+            </p>
+            <div class="technologies">
+              <span>Java</span>
             </div>
+            <a
+              href="https://github.com/karthikmuni222/Tictactoe-Game"
+              target="_blank"
+              class="github-btn"
+              >View Source <i class="fab fa-github"></i
+            ></a>
+          </div>
         </div>
-    </div>  
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Calci.png" alt="Project Two" />
+          </div>
+          <div class="project-info">
+            <h3>Calculator</h3>
+            <p>I have built a simple calculator using <strong>HTML,CSS,JavaScript</strong>.</p>
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://karthikmuni222.github.io/Calculator/calci.html"  target="_blank" class="github-btn"
+              >DEMO <i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Weather-app.png" alt="Project Three" />
+          </div>
+          <div class="project-info">
+            <h3>Weather-App</h3>
+            <p>I have created this Weather app using <strong>HTML,CSS,JavaScript</strong> and I have used an API to fetch this information about weather. </p>
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://karthikmuni222.github.io/WeatherApp/"  target="_blank" class="github-btn"
+              >DEMO <i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="JAVA Logo.webp" alt="Java" class="skill-img" />
+
+          <h3>JSE (Core Java)</h3>
+        </div>
+
+        <div class="skill-card">
+          <img src="mysql logo.png" alt="MySQL" class="skill-img" />
+
+          <h3>MySQL</h3>
+        </div>
+
+        <div class="skill-card">
+          <img src="html logo.jpg" alt="HTML" class="skill-img" />
+
+          <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+          <img src="css icon.png" alt="CSS" class="skill-img" />
+
+          <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card">
+          <img src="javascript logo.jpg" alt="JavaScript" class="skill-img" />
+
+          <h3>JavaScript</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Add this footer section after the contact section and before the closing body tag -->
+
     <footer>
-        <div class="class-content">
-            <p>&copy; 2024 Alam Muni Karthik. All rights reserved.</p>
+      <div class="footer-content">
+        <p>&copy; 2024 Alam Muni Karthik. All rights reserved.</p>
+
+        <div class="footer-social">
+          <a href="https://github.com/karthikmuni222" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/munikarthik-alam/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+
+          <a
+            href="https://www.hackerrank.com/profile/munikarthik222"
+            target="_blank"
+            ><i class="fab fa-hackerrank"></i
+          ></a>
         </div>
+      </div>
     </footer>
     <script>
+      const sections = document.querySelectorAll("section");
 
-        const apiKey = "6253085b3276a6b026d5ad55688415ac";
-        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+      const navLinks = document.querySelectorAll("nav ul li a");
 
-        const searchBox = document.querySelector(".search input"); 
-        const searchBtn = document.querySelector(".search button");
-        const weatherIcon = document.querySelector(".weather-icon");
+      window.addEventListener("scroll", () => {
+        let current = "";
 
-        async function checkWeather(city){
-            const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-            if(response.status == 404){
-                document.querySelector(".error").style.display = "block";
-                document.querySelector(".weather").style.display = "none";
-            }
-            else
-            {
-            var data = await response.json();
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
 
-            console.log(data);
-            
-            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
-            document.querySelector(".city").innerHTML = data.name;
-            document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-            document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
-            
-            if(data.weather[0].main == "Clouds"){
-                weatherIcon.src="clouds.png";
-            }
-            else if(data.weather[0].main == "Clear"){
-                weatherIcon.src="clear.png";
-            }
-            else if(data.weather[0].main == "Rain"){
-                weatherIcon.src="rain.png";
-            }
-            else if(data.weather[0].main == "Drizzle"){
-                weatherIcon.src="drizzle.png";
-            }
-            else if(data.weather[0].main == "Mist"){
-                weatherIcon.src="mist.png";
-            }
+          const sectionHeight = section.clientHeight;
 
-            document.querySelector(".weather").style.display = "block";
-            document.querySelector(".error").style.display = "none";
-    
-        }
-        }
+          if (scrollY >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+          }
+        });
 
-        searchBtn.addEventListener("click" , ()=>{
-            checkWeather(searchBox.value);
-        })
-        
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
 
+          if (link.getAttribute("href").slice(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
 
+      // Hamburger menu functionality
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('nav ul');
+
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('show');
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
